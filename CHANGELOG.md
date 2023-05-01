@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-## [v0.2.0]() | `2023-05-01`
+## [v0.2.0](https://github.com/Stanislav121/ToyWebService/commit/419d6faee961f232ab39c06f2928bc69234ea6cc) | `2023-05-01`
 ### Add
 - Add ChangeLog
 

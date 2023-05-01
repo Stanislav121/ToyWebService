@@ -1,0 +1,4 @@
+Add postgre by Docker
+Implement GetItems in repository ItemRepository
+Add integration tests
+Add Architecture tests
