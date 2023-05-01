@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyWebService", "ToyWebServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyGrpcService", "ToyGrpcService\ToyGrpcService.csproj", "{8E91B220-51BA-4F85-B551-AFF56584D097}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyWebService.Application", "ToyWebService.Application\ToyWebService.Application.csproj", "{2C2EEA6C-3936-425E-B967-7A99F9388F97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,11 @@ Global
 		{8E91B220-51BA-4F85-B551-AFF56584D097}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E91B220-51BA-4F85-B551-AFF56584D097}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E91B220-51BA-4F85-B551-AFF56584D097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C2EEA6C-3936-425E-B967-7A99F9388F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2EEA6C-3936-425E-B967-7A99F9388F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2EEA6C-3936-425E-B967-7A99F9388F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C2EEA6C-3936-425E-B967-7A99F9388F97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "ToyGrpcService";
+
+package item;
+
+service Items {
+  rpc V1GetItems (V1GetItemsRequest) returns (stream V1GetItemsResponse);
+}
+
+
+////////////////////////////////
+/// V1GetItems
+////////////////////////////////
+message V1GetItemsRequest {
+  // Начать получение items этого id. Если не задано, то начиная с самых старых
+  int64 start_id  = 1;
+  // Закончить получение items этим id. Если не задано, то заканчивая самыми последними
+  int64 finish_id = 2;
+}
+
+message V1GetItemsResponse {
+  // Идентификатор товара
+  int64 item_id = 1;
+}

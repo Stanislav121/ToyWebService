@@ -1,0 +1,12 @@
+{
+  "details": {
+    "methodFqn": "item.Items.V1GetItems"
+  },
+  "requests": [
+    {
+      "location": "V1GetItems-request.json"
+    }
+  ],
+  "operationType": "serverStreaming",
+  "invokerName": "grpc"
+}
