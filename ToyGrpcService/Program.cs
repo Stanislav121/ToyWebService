@@ -9,9 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel(options =>
 {
-    // Setup a HTTP/2 endpoint without TLS.
-    options.ListenLocalhost(5042, o => o.Protocols =
-        HttpProtocols.Http2);
+    if (builder.Environment.IsDevelopment())
+    {
+        // Setup a HTTP/2 endpoint without TLS.
+        options.ListenLocalhost(5042, o => o.Protocols =
+            HttpProtocols.Http2);
+    }
 });
 
 // Additional configuration is required to successfully run gRPC on macOS.
