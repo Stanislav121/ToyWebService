@@ -13,13 +13,13 @@ service Items {
 /// V1GetItems
 ////////////////////////////////
 message V1GetItemsRequest {
-  // Начать получение items этого id. Если не задано, то начиная с самых старых
+  // Start gettings items from this id. If not set, start from min id
   int64 start_id  = 1;
-  // Закончить получение items этим id. Если не задано, то заканчивая самыми последними
+  // Finish gettings items to this id. If not set, finish to max id
   int64 finish_id = 2;
 }
 
 message V1GetItemsResponse {
-  // Идентификатор товара
+  // item/product id
   int64 item_id = 1;
 }
