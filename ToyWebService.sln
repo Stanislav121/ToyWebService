@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyGrpcService", "ToyGrpcSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyWebService.Application", "ToyWebService.Application\ToyWebService.Application.csproj", "{2C2EEA6C-3936-425E-B967-7A99F9388F97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyWebService.Migrator", "ToyWebService.Migrator\ToyWebService.Migrator.csproj", "{BC21B1F6-6B61-4BB5-A144-CCDAF6812689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyWebService.Utils", "ToyWebService.Utils\ToyWebService.Utils.csproj", "{793FB107-3C73-4CBE-836B-5CCDD3968735}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,14 @@ Global
 		{2C2EEA6C-3936-425E-B967-7A99F9388F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C2EEA6C-3936-425E-B967-7A99F9388F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C2EEA6C-3936-425E-B967-7A99F9388F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC21B1F6-6B61-4BB5-A144-CCDAF6812689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC21B1F6-6B61-4BB5-A144-CCDAF6812689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC21B1F6-6B61-4BB5-A144-CCDAF6812689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC21B1F6-6B61-4BB5-A144-CCDAF6812689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{793FB107-3C73-4CBE-836B-5CCDD3968735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793FB107-3C73-4CBE-836B-5CCDD3968735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793FB107-3C73-4CBE-836B-5CCDD3968735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793FB107-3C73-4CBE-836B-5CCDD3968735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection

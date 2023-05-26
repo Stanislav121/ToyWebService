@@ -1,4 +1,12 @@
-Add postgre by Docker
+Check create DB and Migration on clear machine
 Implement GetItems in repository ItemRepository
 Add integration tests
 Add Architecture tests
+Add endpoint for start async operation and for result of async operation
+Add open tracing
+Add Jwt
+Add CompositeTypes for PostgreSQL
+Add MediatR
+Add get config from DI (практика 01:41) 
+services.Configure<PostgresDbConfig>(_configuration.GetSection("Databases:Product"));
+var congig = 

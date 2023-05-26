@@ -1,0 +1,4 @@
+http://packagesearch.azurewebsites.net/?q=AddJsonFile
+Найти в каком nuget пакете находиться класс/метод
+When you are looking for a package which contains a specific class and/or extension method, use Microsoft/.NET Core Team's Reverse Package Search to search for it. i.e. packagesearch.azurewebsites.net/?q=AddJsonFile
+
