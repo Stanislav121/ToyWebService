@@ -1,0 +1,12 @@
+version: "3"
+services:
+  toy-web-service:
+    image: postgres
+    restart: always
+    container_name: toy-web-service
+    environment:
+      - "POSTGRES_USER=postgres"
+      - "POSTGRES_PASSWORD=mysecretpassword"
+      - "POSTGRES_DB=toy-web-service"
+    ports:
+      - 35001:5432
