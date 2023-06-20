@@ -6,6 +6,7 @@ package item;
 
 service Items {
   rpc V1GetItems (V1GetItemsRequest) returns (stream V1GetItemsResponse);
+  rpc V1GetItem (V1GetItemRequest) returns (V1GetItemResponse);
 }
 
 
@@ -22,4 +23,17 @@ message V1GetItemsRequest {
 message V1GetItemsResponse {
   // item/product id
   int64 item_id = 1;
+}
+
+
+////////////////////////////////
+/// V1GetItem
+////////////////////////////////
+message V1GetItemRequest {
+  int64 id  = 1;
+}
+
+message V1GetItemResponse {
+  int64 id = 1;
+  string name = 2;
 }

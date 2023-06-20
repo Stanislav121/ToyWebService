@@ -2,7 +2,7 @@ using FluentMigrator;
 
 namespace ToyWebService.Migrator.Migrations;
 
-// For DDL operation us None
+// For DDL operation use None
 // For Data manipulation(DML) use Default(work in transaction). Like update phone numbers
 [Migration(20230523130900, TransactionBehavior.None)]
 public class Init : Migration
