@@ -3,7 +3,6 @@ using ToyWebService.Application.DAL.Utils;
 using Dapper;
 using ToyWebService.Application.BLL.Exceptions;
 using ToyWebService.Application.BLL.Repositories;
-using ToyWebService.Application.DAL.Models;
 using ToyWebService.Application.DAL.Models.Item;
 
 namespace ToyWebService.Application.DAL;
@@ -20,6 +19,7 @@ public class ItemRepository : BasicRepository, IItemRepository
     {
         var query = @$"select id, name, tag_ids from {_tableName} where id = @Id";
 
+        // TODO переделай по новому
         var queryParams = new
         {
             Id = id

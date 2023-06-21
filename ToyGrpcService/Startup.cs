@@ -59,26 +59,6 @@ public class Startup
         {
             endpoints.MapGrpcService<GreeterService>();
             endpoints.MapGrpcService<ItemsGrpcService>();
-            
-            //endpoints.MapGet("/",
-            //    () =>
-            //        "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
         });
     }
 }
-
-// TODO осталось этот класс переписать
-/*public class Startup
-{
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-    {
-        app.UseEndpoints(e =>
-        {
-
-            e.MapGet("/",
-                () =>
-                    "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
-        });
-    }
-
-}*/

@@ -1,4 +1,4 @@
-namespace ToyWebService.Application.DAL.Models;
+namespace ToyWebService.Application.DAL.Models.Item;
 
 public class ItemV1
 {

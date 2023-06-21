@@ -2,7 +2,7 @@ using System.Data.Common;
 using System.Transactions;
 using Npgsql;
 using Npgsql.NameTranslation;
-using ToyWebService.Application.DAL.Models;
+using ToyWebService.Application.DAL.Models.Item;
 
 namespace ToyWebService.Application.DAL.Utils;
 

@@ -1,5 +1,4 @@
 using Grpc.Core;
-using ToyGrpcService;
 
 namespace ToyGrpcService.Services;
 
