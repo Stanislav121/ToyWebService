@@ -1,0 +1,12 @@
+{
+  "details": {
+    "methodFqn": "item.Items.V1GetItem"
+  },
+  "requests": [
+    {
+      "location": "V1GetItem-request.json"
+    }
+  ],
+  "operationType": "unary",
+  "invokerName": "grpc"
+}

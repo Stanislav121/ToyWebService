@@ -3,11 +3,11 @@ using ToyWebService.Application.BLL.Service.Interfaces;
 
 namespace ToyGrpcService.Services;
 
-public class ItemsService : Items.ItemsBase
+public class ItemsGrpcService : Items.ItemsBase
 {
     private readonly IItemService _itemService;
 
-    public ItemsService(IItemService itemService)
+    public ItemsGrpcService(IItemService itemService)
     {
         _itemService = itemService;
     }
@@ -22,5 +22,15 @@ public class ItemsService : Items.ItemsBase
                 ItemId = instance.Id,
             });
         }
+    }
+
+    public override async Task<V1GetItemResponse> V1GetItem(V1GetItemRequest request, ServerCallContext context)
+    {
+        var result = await _itemService.GetItem(request.Id, context.CancellationToken);
+        return new V1GetItemResponse
+        {
+            Id = result.Id,
+            Name = result.Name,
+        };
     }
 }

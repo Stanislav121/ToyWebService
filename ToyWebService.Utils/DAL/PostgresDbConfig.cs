@@ -12,5 +12,6 @@ public class PostgresDbConfig
     
     public string Password { get; init; }
 
+    //TODO не забудь использовать это
     public string PartialConnectionString { get; init; }
 }

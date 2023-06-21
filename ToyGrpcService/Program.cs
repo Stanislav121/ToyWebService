@@ -14,14 +14,14 @@ public class Program
     private static IHostBuilder CreateHostBuilder(string[] args)
     {
         return Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder =>
+            .ConfigureWebHostDefaults(builder =>
             {
-                webBuilder.ConfigureKestrel(options =>
+                builder.ConfigureKestrel(options =>
                 {
-                    options.ListenLocalhost(5042, 
+                    options.ListenLocalhost(5042,
                         o => o.Protocols = HttpProtocols.Http2);
                 });
-                webBuilder.UseStartup<Startup>();
+                builder.UseStartup<Startup>();
             });
     }
 }

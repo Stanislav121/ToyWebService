@@ -3,10 +3,12 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <Nullable>disable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.123" />
+      <PackageReference Include="Npgsql" Version="7.0.4" />
       <PackageReference Include="System.Linq.Async" Version="6.0.1" />
     </ItemGroup>
 
@@ -30,10 +32,6 @@
       <Content Include="obj\ToyWebService.Application.csproj.nuget.dgspec.json" />
       <Content Include="obj\ToyWebService.Application.csproj.nuget.g.props" />
       <Content Include="obj\ToyWebService.Application.csproj.nuget.g.targets" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
     </ItemGroup>
 
 </Project>
